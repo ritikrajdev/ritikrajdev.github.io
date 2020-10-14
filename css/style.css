@@ -1,0 +1,1414 @@
+@import url("https://fonts.googleapis.com/css2?family=Fondamento&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #121212;
+}
+
+#top-navbar {
+  position: absolute;
+  width: 96%;
+  height: max-content;
+  margin: 20px 2%;
+  top: -50vh;
+  animation: bring-nav-down 0.3s ease 0.8s forwards;
+  -o-animation: bring-nav-down 0.3s ease 0.8s forwards;
+  -webkit-animation: bring-nav-down 0.3s ease 0.8s forwards;
+  -moz-animation: bring-nav-down 0.3s ease 0.8s forwards;
+}
+#top-navbar a {
+  position: relative;
+  color: white;
+  font-size: 2.5rem;
+  padding: 5px;
+  padding-top: 10px;
+}
+#top-navbar a:active {
+  color: #FF1E56;
+  mix-blend-mode: difference;
+}
+#top-navbar a::after,
+#top-navbar a::before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: #FF1E56;
+  mix-blend-mode: difference;
+  position: absolute;
+  left: 0px;
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -o-transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  transition: transform 0.3s;
+}
+#top-navbar a::before {
+  bottom: 0px;
+}
+#top-navbar a::after {
+  top: 0px;
+}
+#top-navbar a:hover::after,
+#top-navbar a:hover::before {
+  transform: scaleX(1);
+}
+#top-navbar div {
+  float: right;
+}
+#top-navbar div a {
+  margin: 10px;
+}
+@media screen and (max-width: 250px) {
+  #top-navbar a {
+    font-size: 1.5rem;
+  }
+  #top-navbar div a {
+    margin: 5px;
+  }
+}
+
+#main-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #121212 50%, #FF1E56 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Fondamento, cursive;
+  animation: animate-on-load 0.4s ease forwards;
+  -o-animation: animate-on-load 0.4s ease forwards;
+  -webkit-animation: animate-on-load 0.4s ease forwards;
+  -moz-animation: animate-on-load 0.4s ease forwards;
+}
+#main-page h1 {
+  color: #FF1E56;
+  mix-blend-mode: difference;
+  font-size: 6.5rem;
+  position: relative;
+  right: 120vw;
+  animation: move-in 0.4s ease 0.4s forwards;
+  -o-animation: move-in 0.4s ease 0.4s forwards;
+  -webkit-animation: move-in 0.4s ease 0.4s forwards;
+  -moz-animation: move-in 0.4s ease 0.4s forwards;
+}
+@media screen and (max-width: 1150px) {
+  #main-page h1 {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 790px) {
+  #main-page h1 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 180px) {
+  #main-page h1 {
+    font-size: 20vw;
+  }
+}
+#main-page h2 {
+  color: #FF1E56;
+  mix-blend-mode: difference;
+  font-size: 1.5rem;
+  opacity: 0;
+  animation: fade-in 0.7s ease 0.8s forwards;
+  -o-animation: fade-in 0.7s ease 0.8s forwards;
+  -webkit-animation: fade-in 0.7s ease 0.8s forwards;
+  -moz-animation: fade-in 0.7s ease 0.8s forwards;
+}
+@media screen and (max-width: 180px) {
+  #main-page h2 {
+    font-size: 10vw;
+  }
+}
+
+@-webkit-keyframes move-in {
+  to {
+    right: 0;
+  }
+}
+@-moz-keyframes move-in {
+  to {
+    right: 0;
+  }
+}
+@-o-keyframes move-in {
+  to {
+    right: 0;
+  }
+}
+@keyframes move-in {
+  to {
+    right: 0;
+  }
+}
+@-webkit-keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bring-nav-down {
+  to {
+    top: 0;
+  }
+}
+@-moz-keyframes bring-nav-down {
+  to {
+    top: 0;
+  }
+}
+@-o-keyframes bring-nav-down {
+  to {
+    top: 0;
+  }
+}
+@keyframes bring-nav-down {
+  to {
+    top: 0;
+  }
+}
+@-webkit-keyframes animate-on-load {
+  0% {
+    background: linear-gradient(to bottom right, #121212 100%, #FF1E56 0%);
+  }
+  1% {
+    background: linear-gradient(to bottom right, #121212 99.5%, #FF1E56 0.5%);
+  }
+  2% {
+    background: linear-gradient(to bottom right, #121212 99%, #FF1E56 1%);
+  }
+  3% {
+    background: linear-gradient(to bottom right, #121212 98.5%, #FF1E56 1.5%);
+  }
+  4% {
+    background: linear-gradient(to bottom right, #121212 98%, #FF1E56 2%);
+  }
+  5% {
+    background: linear-gradient(to bottom right, #121212 97.5%, #FF1E56 2.5%);
+  }
+  6% {
+    background: linear-gradient(to bottom right, #121212 97%, #FF1E56 3%);
+  }
+  7% {
+    background: linear-gradient(to bottom right, #121212 96.5%, #FF1E56 3.5%);
+  }
+  8% {
+    background: linear-gradient(to bottom right, #121212 96%, #FF1E56 4%);
+  }
+  9% {
+    background: linear-gradient(to bottom right, #121212 95.5%, #FF1E56 4.5%);
+  }
+  10% {
+    background: linear-gradient(to bottom right, #121212 95%, #FF1E56 5%);
+  }
+  11% {
+    background: linear-gradient(to bottom right, #121212 94.5%, #FF1E56 5.5%);
+  }
+  12% {
+    background: linear-gradient(to bottom right, #121212 94%, #FF1E56 6%);
+  }
+  13% {
+    background: linear-gradient(to bottom right, #121212 93.5%, #FF1E56 6.5%);
+  }
+  14% {
+    background: linear-gradient(to bottom right, #121212 93%, #FF1E56 7%);
+  }
+  15% {
+    background: linear-gradient(to bottom right, #121212 92.5%, #FF1E56 7.5%);
+  }
+  16% {
+    background: linear-gradient(to bottom right, #121212 92%, #FF1E56 8%);
+  }
+  17% {
+    background: linear-gradient(to bottom right, #121212 91.5%, #FF1E56 8.5%);
+  }
+  18% {
+    background: linear-gradient(to bottom right, #121212 91%, #FF1E56 9%);
+  }
+  19% {
+    background: linear-gradient(to bottom right, #121212 90.5%, #FF1E56 9.5%);
+  }
+  20% {
+    background: linear-gradient(to bottom right, #121212 90%, #FF1E56 10%);
+  }
+  21% {
+    background: linear-gradient(to bottom right, #121212 89.5%, #FF1E56 10.5%);
+  }
+  22% {
+    background: linear-gradient(to bottom right, #121212 89%, #FF1E56 11%);
+  }
+  23% {
+    background: linear-gradient(to bottom right, #121212 88.5%, #FF1E56 11.5%);
+  }
+  24% {
+    background: linear-gradient(to bottom right, #121212 88%, #FF1E56 12%);
+  }
+  25% {
+    background: linear-gradient(to bottom right, #121212 87.5%, #FF1E56 12.5%);
+  }
+  26% {
+    background: linear-gradient(to bottom right, #121212 87%, #FF1E56 13%);
+  }
+  27% {
+    background: linear-gradient(to bottom right, #121212 86.5%, #FF1E56 13.5%);
+  }
+  28% {
+    background: linear-gradient(to bottom right, #121212 86%, #FF1E56 14%);
+  }
+  29% {
+    background: linear-gradient(to bottom right, #121212 85.5%, #FF1E56 14.5%);
+  }
+  30% {
+    background: linear-gradient(to bottom right, #121212 85%, #FF1E56 15%);
+  }
+  31% {
+    background: linear-gradient(to bottom right, #121212 84.5%, #FF1E56 15.5%);
+  }
+  32% {
+    background: linear-gradient(to bottom right, #121212 84%, #FF1E56 16%);
+  }
+  33% {
+    background: linear-gradient(to bottom right, #121212 83.5%, #FF1E56 16.5%);
+  }
+  34% {
+    background: linear-gradient(to bottom right, #121212 83%, #FF1E56 17%);
+  }
+  35% {
+    background: linear-gradient(to bottom right, #121212 82.5%, #FF1E56 17.5%);
+  }
+  36% {
+    background: linear-gradient(to bottom right, #121212 82%, #FF1E56 18%);
+  }
+  37% {
+    background: linear-gradient(to bottom right, #121212 81.5%, #FF1E56 18.5%);
+  }
+  38% {
+    background: linear-gradient(to bottom right, #121212 81%, #FF1E56 19%);
+  }
+  39% {
+    background: linear-gradient(to bottom right, #121212 80.5%, #FF1E56 19.5%);
+  }
+  40% {
+    background: linear-gradient(to bottom right, #121212 80%, #FF1E56 20%);
+  }
+  41% {
+    background: linear-gradient(to bottom right, #121212 79.5%, #FF1E56 20.5%);
+  }
+  42% {
+    background: linear-gradient(to bottom right, #121212 79%, #FF1E56 21%);
+  }
+  43% {
+    background: linear-gradient(to bottom right, #121212 78.5%, #FF1E56 21.5%);
+  }
+  44% {
+    background: linear-gradient(to bottom right, #121212 78%, #FF1E56 22%);
+  }
+  45% {
+    background: linear-gradient(to bottom right, #121212 77.5%, #FF1E56 22.5%);
+  }
+  46% {
+    background: linear-gradient(to bottom right, #121212 77%, #FF1E56 23%);
+  }
+  47% {
+    background: linear-gradient(to bottom right, #121212 76.5%, #FF1E56 23.5%);
+  }
+  48% {
+    background: linear-gradient(to bottom right, #121212 76%, #FF1E56 24%);
+  }
+  49% {
+    background: linear-gradient(to bottom right, #121212 75.5%, #FF1E56 24.5%);
+  }
+  50% {
+    background: linear-gradient(to bottom right, #121212 75%, #FF1E56 25%);
+  }
+  51% {
+    background: linear-gradient(to bottom right, #121212 74.5%, #FF1E56 25.5%);
+  }
+  52% {
+    background: linear-gradient(to bottom right, #121212 74%, #FF1E56 26%);
+  }
+  53% {
+    background: linear-gradient(to bottom right, #121212 73.5%, #FF1E56 26.5%);
+  }
+  54% {
+    background: linear-gradient(to bottom right, #121212 73%, #FF1E56 27%);
+  }
+  55% {
+    background: linear-gradient(to bottom right, #121212 72.5%, #FF1E56 27.5%);
+  }
+  56% {
+    background: linear-gradient(to bottom right, #121212 72%, #FF1E56 28%);
+  }
+  57% {
+    background: linear-gradient(to bottom right, #121212 71.5%, #FF1E56 28.5%);
+  }
+  58% {
+    background: linear-gradient(to bottom right, #121212 71%, #FF1E56 29%);
+  }
+  59% {
+    background: linear-gradient(to bottom right, #121212 70.5%, #FF1E56 29.5%);
+  }
+  60% {
+    background: linear-gradient(to bottom right, #121212 70%, #FF1E56 30%);
+  }
+  61% {
+    background: linear-gradient(to bottom right, #121212 69.5%, #FF1E56 30.5%);
+  }
+  62% {
+    background: linear-gradient(to bottom right, #121212 69%, #FF1E56 31%);
+  }
+  63% {
+    background: linear-gradient(to bottom right, #121212 68.5%, #FF1E56 31.5%);
+  }
+  64% {
+    background: linear-gradient(to bottom right, #121212 68%, #FF1E56 32%);
+  }
+  65% {
+    background: linear-gradient(to bottom right, #121212 67.5%, #FF1E56 32.5%);
+  }
+  66% {
+    background: linear-gradient(to bottom right, #121212 67%, #FF1E56 33%);
+  }
+  67% {
+    background: linear-gradient(to bottom right, #121212 66.5%, #FF1E56 33.5%);
+  }
+  68% {
+    background: linear-gradient(to bottom right, #121212 66%, #FF1E56 34%);
+  }
+  69% {
+    background: linear-gradient(to bottom right, #121212 65.5%, #FF1E56 34.5%);
+  }
+  70% {
+    background: linear-gradient(to bottom right, #121212 65%, #FF1E56 35%);
+  }
+  71% {
+    background: linear-gradient(to bottom right, #121212 64.5%, #FF1E56 35.5%);
+  }
+  72% {
+    background: linear-gradient(to bottom right, #121212 64%, #FF1E56 36%);
+  }
+  73% {
+    background: linear-gradient(to bottom right, #121212 63.5%, #FF1E56 36.5%);
+  }
+  74% {
+    background: linear-gradient(to bottom right, #121212 63%, #FF1E56 37%);
+  }
+  75% {
+    background: linear-gradient(to bottom right, #121212 62.5%, #FF1E56 37.5%);
+  }
+  76% {
+    background: linear-gradient(to bottom right, #121212 62%, #FF1E56 38%);
+  }
+  77% {
+    background: linear-gradient(to bottom right, #121212 61.5%, #FF1E56 38.5%);
+  }
+  78% {
+    background: linear-gradient(to bottom right, #121212 61%, #FF1E56 39%);
+  }
+  79% {
+    background: linear-gradient(to bottom right, #121212 60.5%, #FF1E56 39.5%);
+  }
+  80% {
+    background: linear-gradient(to bottom right, #121212 60%, #FF1E56 40%);
+  }
+  81% {
+    background: linear-gradient(to bottom right, #121212 59.5%, #FF1E56 40.5%);
+  }
+  82% {
+    background: linear-gradient(to bottom right, #121212 59%, #FF1E56 41%);
+  }
+  83% {
+    background: linear-gradient(to bottom right, #121212 58.5%, #FF1E56 41.5%);
+  }
+  84% {
+    background: linear-gradient(to bottom right, #121212 58%, #FF1E56 42%);
+  }
+  85% {
+    background: linear-gradient(to bottom right, #121212 57.5%, #FF1E56 42.5%);
+  }
+  86% {
+    background: linear-gradient(to bottom right, #121212 57%, #FF1E56 43%);
+  }
+  87% {
+    background: linear-gradient(to bottom right, #121212 56.5%, #FF1E56 43.5%);
+  }
+  88% {
+    background: linear-gradient(to bottom right, #121212 56%, #FF1E56 44%);
+  }
+  89% {
+    background: linear-gradient(to bottom right, #121212 55.5%, #FF1E56 44.5%);
+  }
+  90% {
+    background: linear-gradient(to bottom right, #121212 55%, #FF1E56 45%);
+  }
+  91% {
+    background: linear-gradient(to bottom right, #121212 54.5%, #FF1E56 45.5%);
+  }
+  92% {
+    background: linear-gradient(to bottom right, #121212 54%, #FF1E56 46%);
+  }
+  93% {
+    background: linear-gradient(to bottom right, #121212 53.5%, #FF1E56 46.5%);
+  }
+  94% {
+    background: linear-gradient(to bottom right, #121212 53%, #FF1E56 47%);
+  }
+  95% {
+    background: linear-gradient(to bottom right, #121212 52.5%, #FF1E56 47.5%);
+  }
+  96% {
+    background: linear-gradient(to bottom right, #121212 52%, #FF1E56 48%);
+  }
+  97% {
+    background: linear-gradient(to bottom right, #121212 51.5%, #FF1E56 48.5%);
+  }
+  98% {
+    background: linear-gradient(to bottom right, #121212 51%, #FF1E56 49%);
+  }
+  99% {
+    background: linear-gradient(to bottom right, #121212 50.5%, #FF1E56 49.5%);
+  }
+  100% {
+    background: linear-gradient(to bottom right, #121212 50%, #FF1E56 50%);
+  }
+}
+@-moz-keyframes animate-on-load {
+  0% {
+    background: linear-gradient(to bottom right, #121212 100%, #FF1E56 0%);
+  }
+  1% {
+    background: linear-gradient(to bottom right, #121212 99.5%, #FF1E56 0.5%);
+  }
+  2% {
+    background: linear-gradient(to bottom right, #121212 99%, #FF1E56 1%);
+  }
+  3% {
+    background: linear-gradient(to bottom right, #121212 98.5%, #FF1E56 1.5%);
+  }
+  4% {
+    background: linear-gradient(to bottom right, #121212 98%, #FF1E56 2%);
+  }
+  5% {
+    background: linear-gradient(to bottom right, #121212 97.5%, #FF1E56 2.5%);
+  }
+  6% {
+    background: linear-gradient(to bottom right, #121212 97%, #FF1E56 3%);
+  }
+  7% {
+    background: linear-gradient(to bottom right, #121212 96.5%, #FF1E56 3.5%);
+  }
+  8% {
+    background: linear-gradient(to bottom right, #121212 96%, #FF1E56 4%);
+  }
+  9% {
+    background: linear-gradient(to bottom right, #121212 95.5%, #FF1E56 4.5%);
+  }
+  10% {
+    background: linear-gradient(to bottom right, #121212 95%, #FF1E56 5%);
+  }
+  11% {
+    background: linear-gradient(to bottom right, #121212 94.5%, #FF1E56 5.5%);
+  }
+  12% {
+    background: linear-gradient(to bottom right, #121212 94%, #FF1E56 6%);
+  }
+  13% {
+    background: linear-gradient(to bottom right, #121212 93.5%, #FF1E56 6.5%);
+  }
+  14% {
+    background: linear-gradient(to bottom right, #121212 93%, #FF1E56 7%);
+  }
+  15% {
+    background: linear-gradient(to bottom right, #121212 92.5%, #FF1E56 7.5%);
+  }
+  16% {
+    background: linear-gradient(to bottom right, #121212 92%, #FF1E56 8%);
+  }
+  17% {
+    background: linear-gradient(to bottom right, #121212 91.5%, #FF1E56 8.5%);
+  }
+  18% {
+    background: linear-gradient(to bottom right, #121212 91%, #FF1E56 9%);
+  }
+  19% {
+    background: linear-gradient(to bottom right, #121212 90.5%, #FF1E56 9.5%);
+  }
+  20% {
+    background: linear-gradient(to bottom right, #121212 90%, #FF1E56 10%);
+  }
+  21% {
+    background: linear-gradient(to bottom right, #121212 89.5%, #FF1E56 10.5%);
+  }
+  22% {
+    background: linear-gradient(to bottom right, #121212 89%, #FF1E56 11%);
+  }
+  23% {
+    background: linear-gradient(to bottom right, #121212 88.5%, #FF1E56 11.5%);
+  }
+  24% {
+    background: linear-gradient(to bottom right, #121212 88%, #FF1E56 12%);
+  }
+  25% {
+    background: linear-gradient(to bottom right, #121212 87.5%, #FF1E56 12.5%);
+  }
+  26% {
+    background: linear-gradient(to bottom right, #121212 87%, #FF1E56 13%);
+  }
+  27% {
+    background: linear-gradient(to bottom right, #121212 86.5%, #FF1E56 13.5%);
+  }
+  28% {
+    background: linear-gradient(to bottom right, #121212 86%, #FF1E56 14%);
+  }
+  29% {
+    background: linear-gradient(to bottom right, #121212 85.5%, #FF1E56 14.5%);
+  }
+  30% {
+    background: linear-gradient(to bottom right, #121212 85%, #FF1E56 15%);
+  }
+  31% {
+    background: linear-gradient(to bottom right, #121212 84.5%, #FF1E56 15.5%);
+  }
+  32% {
+    background: linear-gradient(to bottom right, #121212 84%, #FF1E56 16%);
+  }
+  33% {
+    background: linear-gradient(to bottom right, #121212 83.5%, #FF1E56 16.5%);
+  }
+  34% {
+    background: linear-gradient(to bottom right, #121212 83%, #FF1E56 17%);
+  }
+  35% {
+    background: linear-gradient(to bottom right, #121212 82.5%, #FF1E56 17.5%);
+  }
+  36% {
+    background: linear-gradient(to bottom right, #121212 82%, #FF1E56 18%);
+  }
+  37% {
+    background: linear-gradient(to bottom right, #121212 81.5%, #FF1E56 18.5%);
+  }
+  38% {
+    background: linear-gradient(to bottom right, #121212 81%, #FF1E56 19%);
+  }
+  39% {
+    background: linear-gradient(to bottom right, #121212 80.5%, #FF1E56 19.5%);
+  }
+  40% {
+    background: linear-gradient(to bottom right, #121212 80%, #FF1E56 20%);
+  }
+  41% {
+    background: linear-gradient(to bottom right, #121212 79.5%, #FF1E56 20.5%);
+  }
+  42% {
+    background: linear-gradient(to bottom right, #121212 79%, #FF1E56 21%);
+  }
+  43% {
+    background: linear-gradient(to bottom right, #121212 78.5%, #FF1E56 21.5%);
+  }
+  44% {
+    background: linear-gradient(to bottom right, #121212 78%, #FF1E56 22%);
+  }
+  45% {
+    background: linear-gradient(to bottom right, #121212 77.5%, #FF1E56 22.5%);
+  }
+  46% {
+    background: linear-gradient(to bottom right, #121212 77%, #FF1E56 23%);
+  }
+  47% {
+    background: linear-gradient(to bottom right, #121212 76.5%, #FF1E56 23.5%);
+  }
+  48% {
+    background: linear-gradient(to bottom right, #121212 76%, #FF1E56 24%);
+  }
+  49% {
+    background: linear-gradient(to bottom right, #121212 75.5%, #FF1E56 24.5%);
+  }
+  50% {
+    background: linear-gradient(to bottom right, #121212 75%, #FF1E56 25%);
+  }
+  51% {
+    background: linear-gradient(to bottom right, #121212 74.5%, #FF1E56 25.5%);
+  }
+  52% {
+    background: linear-gradient(to bottom right, #121212 74%, #FF1E56 26%);
+  }
+  53% {
+    background: linear-gradient(to bottom right, #121212 73.5%, #FF1E56 26.5%);
+  }
+  54% {
+    background: linear-gradient(to bottom right, #121212 73%, #FF1E56 27%);
+  }
+  55% {
+    background: linear-gradient(to bottom right, #121212 72.5%, #FF1E56 27.5%);
+  }
+  56% {
+    background: linear-gradient(to bottom right, #121212 72%, #FF1E56 28%);
+  }
+  57% {
+    background: linear-gradient(to bottom right, #121212 71.5%, #FF1E56 28.5%);
+  }
+  58% {
+    background: linear-gradient(to bottom right, #121212 71%, #FF1E56 29%);
+  }
+  59% {
+    background: linear-gradient(to bottom right, #121212 70.5%, #FF1E56 29.5%);
+  }
+  60% {
+    background: linear-gradient(to bottom right, #121212 70%, #FF1E56 30%);
+  }
+  61% {
+    background: linear-gradient(to bottom right, #121212 69.5%, #FF1E56 30.5%);
+  }
+  62% {
+    background: linear-gradient(to bottom right, #121212 69%, #FF1E56 31%);
+  }
+  63% {
+    background: linear-gradient(to bottom right, #121212 68.5%, #FF1E56 31.5%);
+  }
+  64% {
+    background: linear-gradient(to bottom right, #121212 68%, #FF1E56 32%);
+  }
+  65% {
+    background: linear-gradient(to bottom right, #121212 67.5%, #FF1E56 32.5%);
+  }
+  66% {
+    background: linear-gradient(to bottom right, #121212 67%, #FF1E56 33%);
+  }
+  67% {
+    background: linear-gradient(to bottom right, #121212 66.5%, #FF1E56 33.5%);
+  }
+  68% {
+    background: linear-gradient(to bottom right, #121212 66%, #FF1E56 34%);
+  }
+  69% {
+    background: linear-gradient(to bottom right, #121212 65.5%, #FF1E56 34.5%);
+  }
+  70% {
+    background: linear-gradient(to bottom right, #121212 65%, #FF1E56 35%);
+  }
+  71% {
+    background: linear-gradient(to bottom right, #121212 64.5%, #FF1E56 35.5%);
+  }
+  72% {
+    background: linear-gradient(to bottom right, #121212 64%, #FF1E56 36%);
+  }
+  73% {
+    background: linear-gradient(to bottom right, #121212 63.5%, #FF1E56 36.5%);
+  }
+  74% {
+    background: linear-gradient(to bottom right, #121212 63%, #FF1E56 37%);
+  }
+  75% {
+    background: linear-gradient(to bottom right, #121212 62.5%, #FF1E56 37.5%);
+  }
+  76% {
+    background: linear-gradient(to bottom right, #121212 62%, #FF1E56 38%);
+  }
+  77% {
+    background: linear-gradient(to bottom right, #121212 61.5%, #FF1E56 38.5%);
+  }
+  78% {
+    background: linear-gradient(to bottom right, #121212 61%, #FF1E56 39%);
+  }
+  79% {
+    background: linear-gradient(to bottom right, #121212 60.5%, #FF1E56 39.5%);
+  }
+  80% {
+    background: linear-gradient(to bottom right, #121212 60%, #FF1E56 40%);
+  }
+  81% {
+    background: linear-gradient(to bottom right, #121212 59.5%, #FF1E56 40.5%);
+  }
+  82% {
+    background: linear-gradient(to bottom right, #121212 59%, #FF1E56 41%);
+  }
+  83% {
+    background: linear-gradient(to bottom right, #121212 58.5%, #FF1E56 41.5%);
+  }
+  84% {
+    background: linear-gradient(to bottom right, #121212 58%, #FF1E56 42%);
+  }
+  85% {
+    background: linear-gradient(to bottom right, #121212 57.5%, #FF1E56 42.5%);
+  }
+  86% {
+    background: linear-gradient(to bottom right, #121212 57%, #FF1E56 43%);
+  }
+  87% {
+    background: linear-gradient(to bottom right, #121212 56.5%, #FF1E56 43.5%);
+  }
+  88% {
+    background: linear-gradient(to bottom right, #121212 56%, #FF1E56 44%);
+  }
+  89% {
+    background: linear-gradient(to bottom right, #121212 55.5%, #FF1E56 44.5%);
+  }
+  90% {
+    background: linear-gradient(to bottom right, #121212 55%, #FF1E56 45%);
+  }
+  91% {
+    background: linear-gradient(to bottom right, #121212 54.5%, #FF1E56 45.5%);
+  }
+  92% {
+    background: linear-gradient(to bottom right, #121212 54%, #FF1E56 46%);
+  }
+  93% {
+    background: linear-gradient(to bottom right, #121212 53.5%, #FF1E56 46.5%);
+  }
+  94% {
+    background: linear-gradient(to bottom right, #121212 53%, #FF1E56 47%);
+  }
+  95% {
+    background: linear-gradient(to bottom right, #121212 52.5%, #FF1E56 47.5%);
+  }
+  96% {
+    background: linear-gradient(to bottom right, #121212 52%, #FF1E56 48%);
+  }
+  97% {
+    background: linear-gradient(to bottom right, #121212 51.5%, #FF1E56 48.5%);
+  }
+  98% {
+    background: linear-gradient(to bottom right, #121212 51%, #FF1E56 49%);
+  }
+  99% {
+    background: linear-gradient(to bottom right, #121212 50.5%, #FF1E56 49.5%);
+  }
+  100% {
+    background: linear-gradient(to bottom right, #121212 50%, #FF1E56 50%);
+  }
+}
+@-o-keyframes animate-on-load {
+  0% {
+    background: linear-gradient(to bottom right, #121212 100%, #FF1E56 0%);
+  }
+  1% {
+    background: linear-gradient(to bottom right, #121212 99.5%, #FF1E56 0.5%);
+  }
+  2% {
+    background: linear-gradient(to bottom right, #121212 99%, #FF1E56 1%);
+  }
+  3% {
+    background: linear-gradient(to bottom right, #121212 98.5%, #FF1E56 1.5%);
+  }
+  4% {
+    background: linear-gradient(to bottom right, #121212 98%, #FF1E56 2%);
+  }
+  5% {
+    background: linear-gradient(to bottom right, #121212 97.5%, #FF1E56 2.5%);
+  }
+  6% {
+    background: linear-gradient(to bottom right, #121212 97%, #FF1E56 3%);
+  }
+  7% {
+    background: linear-gradient(to bottom right, #121212 96.5%, #FF1E56 3.5%);
+  }
+  8% {
+    background: linear-gradient(to bottom right, #121212 96%, #FF1E56 4%);
+  }
+  9% {
+    background: linear-gradient(to bottom right, #121212 95.5%, #FF1E56 4.5%);
+  }
+  10% {
+    background: linear-gradient(to bottom right, #121212 95%, #FF1E56 5%);
+  }
+  11% {
+    background: linear-gradient(to bottom right, #121212 94.5%, #FF1E56 5.5%);
+  }
+  12% {
+    background: linear-gradient(to bottom right, #121212 94%, #FF1E56 6%);
+  }
+  13% {
+    background: linear-gradient(to bottom right, #121212 93.5%, #FF1E56 6.5%);
+  }
+  14% {
+    background: linear-gradient(to bottom right, #121212 93%, #FF1E56 7%);
+  }
+  15% {
+    background: linear-gradient(to bottom right, #121212 92.5%, #FF1E56 7.5%);
+  }
+  16% {
+    background: linear-gradient(to bottom right, #121212 92%, #FF1E56 8%);
+  }
+  17% {
+    background: linear-gradient(to bottom right, #121212 91.5%, #FF1E56 8.5%);
+  }
+  18% {
+    background: linear-gradient(to bottom right, #121212 91%, #FF1E56 9%);
+  }
+  19% {
+    background: linear-gradient(to bottom right, #121212 90.5%, #FF1E56 9.5%);
+  }
+  20% {
+    background: linear-gradient(to bottom right, #121212 90%, #FF1E56 10%);
+  }
+  21% {
+    background: linear-gradient(to bottom right, #121212 89.5%, #FF1E56 10.5%);
+  }
+  22% {
+    background: linear-gradient(to bottom right, #121212 89%, #FF1E56 11%);
+  }
+  23% {
+    background: linear-gradient(to bottom right, #121212 88.5%, #FF1E56 11.5%);
+  }
+  24% {
+    background: linear-gradient(to bottom right, #121212 88%, #FF1E56 12%);
+  }
+  25% {
+    background: linear-gradient(to bottom right, #121212 87.5%, #FF1E56 12.5%);
+  }
+  26% {
+    background: linear-gradient(to bottom right, #121212 87%, #FF1E56 13%);
+  }
+  27% {
+    background: linear-gradient(to bottom right, #121212 86.5%, #FF1E56 13.5%);
+  }
+  28% {
+    background: linear-gradient(to bottom right, #121212 86%, #FF1E56 14%);
+  }
+  29% {
+    background: linear-gradient(to bottom right, #121212 85.5%, #FF1E56 14.5%);
+  }
+  30% {
+    background: linear-gradient(to bottom right, #121212 85%, #FF1E56 15%);
+  }
+  31% {
+    background: linear-gradient(to bottom right, #121212 84.5%, #FF1E56 15.5%);
+  }
+  32% {
+    background: linear-gradient(to bottom right, #121212 84%, #FF1E56 16%);
+  }
+  33% {
+    background: linear-gradient(to bottom right, #121212 83.5%, #FF1E56 16.5%);
+  }
+  34% {
+    background: linear-gradient(to bottom right, #121212 83%, #FF1E56 17%);
+  }
+  35% {
+    background: linear-gradient(to bottom right, #121212 82.5%, #FF1E56 17.5%);
+  }
+  36% {
+    background: linear-gradient(to bottom right, #121212 82%, #FF1E56 18%);
+  }
+  37% {
+    background: linear-gradient(to bottom right, #121212 81.5%, #FF1E56 18.5%);
+  }
+  38% {
+    background: linear-gradient(to bottom right, #121212 81%, #FF1E56 19%);
+  }
+  39% {
+    background: linear-gradient(to bottom right, #121212 80.5%, #FF1E56 19.5%);
+  }
+  40% {
+    background: linear-gradient(to bottom right, #121212 80%, #FF1E56 20%);
+  }
+  41% {
+    background: linear-gradient(to bottom right, #121212 79.5%, #FF1E56 20.5%);
+  }
+  42% {
+    background: linear-gradient(to bottom right, #121212 79%, #FF1E56 21%);
+  }
+  43% {
+    background: linear-gradient(to bottom right, #121212 78.5%, #FF1E56 21.5%);
+  }
+  44% {
+    background: linear-gradient(to bottom right, #121212 78%, #FF1E56 22%);
+  }
+  45% {
+    background: linear-gradient(to bottom right, #121212 77.5%, #FF1E56 22.5%);
+  }
+  46% {
+    background: linear-gradient(to bottom right, #121212 77%, #FF1E56 23%);
+  }
+  47% {
+    background: linear-gradient(to bottom right, #121212 76.5%, #FF1E56 23.5%);
+  }
+  48% {
+    background: linear-gradient(to bottom right, #121212 76%, #FF1E56 24%);
+  }
+  49% {
+    background: linear-gradient(to bottom right, #121212 75.5%, #FF1E56 24.5%);
+  }
+  50% {
+    background: linear-gradient(to bottom right, #121212 75%, #FF1E56 25%);
+  }
+  51% {
+    background: linear-gradient(to bottom right, #121212 74.5%, #FF1E56 25.5%);
+  }
+  52% {
+    background: linear-gradient(to bottom right, #121212 74%, #FF1E56 26%);
+  }
+  53% {
+    background: linear-gradient(to bottom right, #121212 73.5%, #FF1E56 26.5%);
+  }
+  54% {
+    background: linear-gradient(to bottom right, #121212 73%, #FF1E56 27%);
+  }
+  55% {
+    background: linear-gradient(to bottom right, #121212 72.5%, #FF1E56 27.5%);
+  }
+  56% {
+    background: linear-gradient(to bottom right, #121212 72%, #FF1E56 28%);
+  }
+  57% {
+    background: linear-gradient(to bottom right, #121212 71.5%, #FF1E56 28.5%);
+  }
+  58% {
+    background: linear-gradient(to bottom right, #121212 71%, #FF1E56 29%);
+  }
+  59% {
+    background: linear-gradient(to bottom right, #121212 70.5%, #FF1E56 29.5%);
+  }
+  60% {
+    background: linear-gradient(to bottom right, #121212 70%, #FF1E56 30%);
+  }
+  61% {
+    background: linear-gradient(to bottom right, #121212 69.5%, #FF1E56 30.5%);
+  }
+  62% {
+    background: linear-gradient(to bottom right, #121212 69%, #FF1E56 31%);
+  }
+  63% {
+    background: linear-gradient(to bottom right, #121212 68.5%, #FF1E56 31.5%);
+  }
+  64% {
+    background: linear-gradient(to bottom right, #121212 68%, #FF1E56 32%);
+  }
+  65% {
+    background: linear-gradient(to bottom right, #121212 67.5%, #FF1E56 32.5%);
+  }
+  66% {
+    background: linear-gradient(to bottom right, #121212 67%, #FF1E56 33%);
+  }
+  67% {
+    background: linear-gradient(to bottom right, #121212 66.5%, #FF1E56 33.5%);
+  }
+  68% {
+    background: linear-gradient(to bottom right, #121212 66%, #FF1E56 34%);
+  }
+  69% {
+    background: linear-gradient(to bottom right, #121212 65.5%, #FF1E56 34.5%);
+  }
+  70% {
+    background: linear-gradient(to bottom right, #121212 65%, #FF1E56 35%);
+  }
+  71% {
+    background: linear-gradient(to bottom right, #121212 64.5%, #FF1E56 35.5%);
+  }
+  72% {
+    background: linear-gradient(to bottom right, #121212 64%, #FF1E56 36%);
+  }
+  73% {
+    background: linear-gradient(to bottom right, #121212 63.5%, #FF1E56 36.5%);
+  }
+  74% {
+    background: linear-gradient(to bottom right, #121212 63%, #FF1E56 37%);
+  }
+  75% {
+    background: linear-gradient(to bottom right, #121212 62.5%, #FF1E56 37.5%);
+  }
+  76% {
+    background: linear-gradient(to bottom right, #121212 62%, #FF1E56 38%);
+  }
+  77% {
+    background: linear-gradient(to bottom right, #121212 61.5%, #FF1E56 38.5%);
+  }
+  78% {
+    background: linear-gradient(to bottom right, #121212 61%, #FF1E56 39%);
+  }
+  79% {
+    background: linear-gradient(to bottom right, #121212 60.5%, #FF1E56 39.5%);
+  }
+  80% {
+    background: linear-gradient(to bottom right, #121212 60%, #FF1E56 40%);
+  }
+  81% {
+    background: linear-gradient(to bottom right, #121212 59.5%, #FF1E56 40.5%);
+  }
+  82% {
+    background: linear-gradient(to bottom right, #121212 59%, #FF1E56 41%);
+  }
+  83% {
+    background: linear-gradient(to bottom right, #121212 58.5%, #FF1E56 41.5%);
+  }
+  84% {
+    background: linear-gradient(to bottom right, #121212 58%, #FF1E56 42%);
+  }
+  85% {
+    background: linear-gradient(to bottom right, #121212 57.5%, #FF1E56 42.5%);
+  }
+  86% {
+    background: linear-gradient(to bottom right, #121212 57%, #FF1E56 43%);
+  }
+  87% {
+    background: linear-gradient(to bottom right, #121212 56.5%, #FF1E56 43.5%);
+  }
+  88% {
+    background: linear-gradient(to bottom right, #121212 56%, #FF1E56 44%);
+  }
+  89% {
+    background: linear-gradient(to bottom right, #121212 55.5%, #FF1E56 44.5%);
+  }
+  90% {
+    background: linear-gradient(to bottom right, #121212 55%, #FF1E56 45%);
+  }
+  91% {
+    background: linear-gradient(to bottom right, #121212 54.5%, #FF1E56 45.5%);
+  }
+  92% {
+    background: linear-gradient(to bottom right, #121212 54%, #FF1E56 46%);
+  }
+  93% {
+    background: linear-gradient(to bottom right, #121212 53.5%, #FF1E56 46.5%);
+  }
+  94% {
+    background: linear-gradient(to bottom right, #121212 53%, #FF1E56 47%);
+  }
+  95% {
+    background: linear-gradient(to bottom right, #121212 52.5%, #FF1E56 47.5%);
+  }
+  96% {
+    background: linear-gradient(to bottom right, #121212 52%, #FF1E56 48%);
+  }
+  97% {
+    background: linear-gradient(to bottom right, #121212 51.5%, #FF1E56 48.5%);
+  }
+  98% {
+    background: linear-gradient(to bottom right, #121212 51%, #FF1E56 49%);
+  }
+  99% {
+    background: linear-gradient(to bottom right, #121212 50.5%, #FF1E56 49.5%);
+  }
+  100% {
+    background: linear-gradient(to bottom right, #121212 50%, #FF1E56 50%);
+  }
+}
+@keyframes animate-on-load {
+  0% {
+    background: linear-gradient(to bottom right, #121212 100%, #FF1E56 0%);
+  }
+  1% {
+    background: linear-gradient(to bottom right, #121212 99.5%, #FF1E56 0.5%);
+  }
+  2% {
+    background: linear-gradient(to bottom right, #121212 99%, #FF1E56 1%);
+  }
+  3% {
+    background: linear-gradient(to bottom right, #121212 98.5%, #FF1E56 1.5%);
+  }
+  4% {
+    background: linear-gradient(to bottom right, #121212 98%, #FF1E56 2%);
+  }
+  5% {
+    background: linear-gradient(to bottom right, #121212 97.5%, #FF1E56 2.5%);
+  }
+  6% {
+    background: linear-gradient(to bottom right, #121212 97%, #FF1E56 3%);
+  }
+  7% {
+    background: linear-gradient(to bottom right, #121212 96.5%, #FF1E56 3.5%);
+  }
+  8% {
+    background: linear-gradient(to bottom right, #121212 96%, #FF1E56 4%);
+  }
+  9% {
+    background: linear-gradient(to bottom right, #121212 95.5%, #FF1E56 4.5%);
+  }
+  10% {
+    background: linear-gradient(to bottom right, #121212 95%, #FF1E56 5%);
+  }
+  11% {
+    background: linear-gradient(to bottom right, #121212 94.5%, #FF1E56 5.5%);
+  }
+  12% {
+    background: linear-gradient(to bottom right, #121212 94%, #FF1E56 6%);
+  }
+  13% {
+    background: linear-gradient(to bottom right, #121212 93.5%, #FF1E56 6.5%);
+  }
+  14% {
+    background: linear-gradient(to bottom right, #121212 93%, #FF1E56 7%);
+  }
+  15% {
+    background: linear-gradient(to bottom right, #121212 92.5%, #FF1E56 7.5%);
+  }
+  16% {
+    background: linear-gradient(to bottom right, #121212 92%, #FF1E56 8%);
+  }
+  17% {
+    background: linear-gradient(to bottom right, #121212 91.5%, #FF1E56 8.5%);
+  }
+  18% {
+    background: linear-gradient(to bottom right, #121212 91%, #FF1E56 9%);
+  }
+  19% {
+    background: linear-gradient(to bottom right, #121212 90.5%, #FF1E56 9.5%);
+  }
+  20% {
+    background: linear-gradient(to bottom right, #121212 90%, #FF1E56 10%);
+  }
+  21% {
+    background: linear-gradient(to bottom right, #121212 89.5%, #FF1E56 10.5%);
+  }
+  22% {
+    background: linear-gradient(to bottom right, #121212 89%, #FF1E56 11%);
+  }
+  23% {
+    background: linear-gradient(to bottom right, #121212 88.5%, #FF1E56 11.5%);
+  }
+  24% {
+    background: linear-gradient(to bottom right, #121212 88%, #FF1E56 12%);
+  }
+  25% {
+    background: linear-gradient(to bottom right, #121212 87.5%, #FF1E56 12.5%);
+  }
+  26% {
+    background: linear-gradient(to bottom right, #121212 87%, #FF1E56 13%);
+  }
+  27% {
+    background: linear-gradient(to bottom right, #121212 86.5%, #FF1E56 13.5%);
+  }
+  28% {
+    background: linear-gradient(to bottom right, #121212 86%, #FF1E56 14%);
+  }
+  29% {
+    background: linear-gradient(to bottom right, #121212 85.5%, #FF1E56 14.5%);
+  }
+  30% {
+    background: linear-gradient(to bottom right, #121212 85%, #FF1E56 15%);
+  }
+  31% {
+    background: linear-gradient(to bottom right, #121212 84.5%, #FF1E56 15.5%);
+  }
+  32% {
+    background: linear-gradient(to bottom right, #121212 84%, #FF1E56 16%);
+  }
+  33% {
+    background: linear-gradient(to bottom right, #121212 83.5%, #FF1E56 16.5%);
+  }
+  34% {
+    background: linear-gradient(to bottom right, #121212 83%, #FF1E56 17%);
+  }
+  35% {
+    background: linear-gradient(to bottom right, #121212 82.5%, #FF1E56 17.5%);
+  }
+  36% {
+    background: linear-gradient(to bottom right, #121212 82%, #FF1E56 18%);
+  }
+  37% {
+    background: linear-gradient(to bottom right, #121212 81.5%, #FF1E56 18.5%);
+  }
+  38% {
+    background: linear-gradient(to bottom right, #121212 81%, #FF1E56 19%);
+  }
+  39% {
+    background: linear-gradient(to bottom right, #121212 80.5%, #FF1E56 19.5%);
+  }
+  40% {
+    background: linear-gradient(to bottom right, #121212 80%, #FF1E56 20%);
+  }
+  41% {
+    background: linear-gradient(to bottom right, #121212 79.5%, #FF1E56 20.5%);
+  }
+  42% {
+    background: linear-gradient(to bottom right, #121212 79%, #FF1E56 21%);
+  }
+  43% {
+    background: linear-gradient(to bottom right, #121212 78.5%, #FF1E56 21.5%);
+  }
+  44% {
+    background: linear-gradient(to bottom right, #121212 78%, #FF1E56 22%);
+  }
+  45% {
+    background: linear-gradient(to bottom right, #121212 77.5%, #FF1E56 22.5%);
+  }
+  46% {
+    background: linear-gradient(to bottom right, #121212 77%, #FF1E56 23%);
+  }
+  47% {
+    background: linear-gradient(to bottom right, #121212 76.5%, #FF1E56 23.5%);
+  }
+  48% {
+    background: linear-gradient(to bottom right, #121212 76%, #FF1E56 24%);
+  }
+  49% {
+    background: linear-gradient(to bottom right, #121212 75.5%, #FF1E56 24.5%);
+  }
+  50% {
+    background: linear-gradient(to bottom right, #121212 75%, #FF1E56 25%);
+  }
+  51% {
+    background: linear-gradient(to bottom right, #121212 74.5%, #FF1E56 25.5%);
+  }
+  52% {
+    background: linear-gradient(to bottom right, #121212 74%, #FF1E56 26%);
+  }
+  53% {
+    background: linear-gradient(to bottom right, #121212 73.5%, #FF1E56 26.5%);
+  }
+  54% {
+    background: linear-gradient(to bottom right, #121212 73%, #FF1E56 27%);
+  }
+  55% {
+    background: linear-gradient(to bottom right, #121212 72.5%, #FF1E56 27.5%);
+  }
+  56% {
+    background: linear-gradient(to bottom right, #121212 72%, #FF1E56 28%);
+  }
+  57% {
+    background: linear-gradient(to bottom right, #121212 71.5%, #FF1E56 28.5%);
+  }
+  58% {
+    background: linear-gradient(to bottom right, #121212 71%, #FF1E56 29%);
+  }
+  59% {
+    background: linear-gradient(to bottom right, #121212 70.5%, #FF1E56 29.5%);
+  }
+  60% {
+    background: linear-gradient(to bottom right, #121212 70%, #FF1E56 30%);
+  }
+  61% {
+    background: linear-gradient(to bottom right, #121212 69.5%, #FF1E56 30.5%);
+  }
+  62% {
+    background: linear-gradient(to bottom right, #121212 69%, #FF1E56 31%);
+  }
+  63% {
+    background: linear-gradient(to bottom right, #121212 68.5%, #FF1E56 31.5%);
+  }
+  64% {
+    background: linear-gradient(to bottom right, #121212 68%, #FF1E56 32%);
+  }
+  65% {
+    background: linear-gradient(to bottom right, #121212 67.5%, #FF1E56 32.5%);
+  }
+  66% {
+    background: linear-gradient(to bottom right, #121212 67%, #FF1E56 33%);
+  }
+  67% {
+    background: linear-gradient(to bottom right, #121212 66.5%, #FF1E56 33.5%);
+  }
+  68% {
+    background: linear-gradient(to bottom right, #121212 66%, #FF1E56 34%);
+  }
+  69% {
+    background: linear-gradient(to bottom right, #121212 65.5%, #FF1E56 34.5%);
+  }
+  70% {
+    background: linear-gradient(to bottom right, #121212 65%, #FF1E56 35%);
+  }
+  71% {
+    background: linear-gradient(to bottom right, #121212 64.5%, #FF1E56 35.5%);
+  }
+  72% {
+    background: linear-gradient(to bottom right, #121212 64%, #FF1E56 36%);
+  }
+  73% {
+    background: linear-gradient(to bottom right, #121212 63.5%, #FF1E56 36.5%);
+  }
+  74% {
+    background: linear-gradient(to bottom right, #121212 63%, #FF1E56 37%);
+  }
+  75% {
+    background: linear-gradient(to bottom right, #121212 62.5%, #FF1E56 37.5%);
+  }
+  76% {
+    background: linear-gradient(to bottom right, #121212 62%, #FF1E56 38%);
+  }
+  77% {
+    background: linear-gradient(to bottom right, #121212 61.5%, #FF1E56 38.5%);
+  }
+  78% {
+    background: linear-gradient(to bottom right, #121212 61%, #FF1E56 39%);
+  }
+  79% {
+    background: linear-gradient(to bottom right, #121212 60.5%, #FF1E56 39.5%);
+  }
+  80% {
+    background: linear-gradient(to bottom right, #121212 60%, #FF1E56 40%);
+  }
+  81% {
+    background: linear-gradient(to bottom right, #121212 59.5%, #FF1E56 40.5%);
+  }
+  82% {
+    background: linear-gradient(to bottom right, #121212 59%, #FF1E56 41%);
+  }
+  83% {
+    background: linear-gradient(to bottom right, #121212 58.5%, #FF1E56 41.5%);
+  }
+  84% {
+    background: linear-gradient(to bottom right, #121212 58%, #FF1E56 42%);
+  }
+  85% {
+    background: linear-gradient(to bottom right, #121212 57.5%, #FF1E56 42.5%);
+  }
+  86% {
+    background: linear-gradient(to bottom right, #121212 57%, #FF1E56 43%);
+  }
+  87% {
+    background: linear-gradient(to bottom right, #121212 56.5%, #FF1E56 43.5%);
+  }
+  88% {
+    background: linear-gradient(to bottom right, #121212 56%, #FF1E56 44%);
+  }
+  89% {
+    background: linear-gradient(to bottom right, #121212 55.5%, #FF1E56 44.5%);
+  }
+  90% {
+    background: linear-gradient(to bottom right, #121212 55%, #FF1E56 45%);
+  }
+  91% {
+    background: linear-gradient(to bottom right, #121212 54.5%, #FF1E56 45.5%);
+  }
+  92% {
+    background: linear-gradient(to bottom right, #121212 54%, #FF1E56 46%);
+  }
+  93% {
+    background: linear-gradient(to bottom right, #121212 53.5%, #FF1E56 46.5%);
+  }
+  94% {
+    background: linear-gradient(to bottom right, #121212 53%, #FF1E56 47%);
+  }
+  95% {
+    background: linear-gradient(to bottom right, #121212 52.5%, #FF1E56 47.5%);
+  }
+  96% {
+    background: linear-gradient(to bottom right, #121212 52%, #FF1E56 48%);
+  }
+  97% {
+    background: linear-gradient(to bottom right, #121212 51.5%, #FF1E56 48.5%);
+  }
+  98% {
+    background: linear-gradient(to bottom right, #121212 51%, #FF1E56 49%);
+  }
+  99% {
+    background: linear-gradient(to bottom right, #121212 50.5%, #FF1E56 49.5%);
+  }
+  100% {
+    background: linear-gradient(to bottom right, #121212 50%, #FF1E56 50%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
