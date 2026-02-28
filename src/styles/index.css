@@ -37,6 +37,24 @@
     overscroll-behavior: contain;
 }
 
+/* Make text selectable inside swiper sections */
+.swiper,
+.swiper * {
+    -webkit-user-select: text !important;
+    user-select: text !important;
+}
+
+/* Readable text selection color on dark background */
+::selection {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+}
+
+::-moz-selection {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+}
+
 /* Disable react-chrono internal scrollbar - let slide handle scrolling */
 .timeline-main-wrapper,
 .timeline-card-content,

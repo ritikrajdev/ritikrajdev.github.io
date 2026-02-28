@@ -240,6 +240,9 @@ export default function App() {
           slidesPerView={1}
           speed={700}
           allowTouchMove={allowSwipe}
+          simulateTouch={false}
+          touchStartPreventDefault={false}
+          touchStartForcePreventDefault={false}
           keyboard={{ enabled: true }}
           className="h-screen"
           onSwiper={(swiper) => {
