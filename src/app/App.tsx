@@ -8,7 +8,8 @@ import { Keyboard, A11y } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import { Chrono } from 'react-chrono';
 import 'swiper/css';
-import resumePdf from '@/assets/resume_ritik_rajdev.pdf';
+
+const resumeURL = "https://drive.google.com/file/d/1La0dVppIIM160-CBS8YpWQ7fIBvKCAqj/view"
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -305,7 +306,7 @@ export default function App() {
                   </a>
 
                   <a
-                    href={resumePdf}
+                    href={resumeURL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-8 py-4 rounded-lg border transition-all duration-300 inline-flex items-center justify-center gap-2"
@@ -570,7 +571,7 @@ export default function App() {
                       </a>
 
                       <a
-                        href={resumePdf}
+                        href={resumeURL}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-8 py-4 rounded-lg border transition-all duration-300 inline-flex items-center justify-center gap-2"
