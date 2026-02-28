@@ -1,0 +1,55 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Custom Teal Scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #14b8a6 #111827;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #111827;
+    border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #14b8a6;
+    border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #0d9488;
+}
+
+/* Allow touch scrolling within swiper slides before triggering slide change */
+.swiper-slide {
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+}
+
+.swiper-slide.overflow-y-auto {
+    overscroll-behavior: contain;
+}
+
+/* Disable react-chrono internal scrollbar - let slide handle scrolling */
+.timeline-main-wrapper,
+.timeline-card-content,
+[class*="timeline-vertical"]>div,
+[class*="TimelineMain"],
+[class*="TimelineWrapper"] {
+    overflow: visible !important;
+    max-height: none !important;
+    height: auto !important;
+}
+
+/* Hide chrono navigation controls */
+[class*="TimelineNavWrapper"],
+[class*="TimelineControl"] {
+    display: none !important;
+}
